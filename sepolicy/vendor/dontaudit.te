@@ -70,3 +70,6 @@ dontaudit untrusted_app ashmem_device:chr_file open;
 
 dontaudit platform_app default_android_hwservice:hwservice_manager find;
 dontaudit platform_app default_android_service:service_manager find;
+
+# disable netutils logspam
+dontaudit netutils_wrapper vendor_file:file r_file_perms;
