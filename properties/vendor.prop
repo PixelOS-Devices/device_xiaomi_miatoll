@@ -244,6 +244,9 @@ vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_gadget_hal=0
 
+# Volume steps
+ro.config.vc_call_vol_steps=11
+
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
 
