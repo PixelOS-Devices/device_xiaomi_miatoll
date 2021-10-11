@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
@@ -136,6 +137,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm-service.clearkey
 
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -165,6 +169,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
+
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
@@ -289,6 +297,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
+
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
