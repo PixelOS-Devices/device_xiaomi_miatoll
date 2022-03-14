@@ -711,8 +711,8 @@
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item></item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>765</item> <!--item>sensorLocationY</item-->
-        <item>200</item> <!--item>sensorRadius</item-->
+        <item>760</item> <!--item>sensorLocationY</item-->
+        <item>100</item> <!--item>sensorRadius</item-->
     </array>
 
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
