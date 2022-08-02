@@ -55,4 +55,8 @@
     <!-- Smart Cutoff -->
     <bool name="config_supportSmartCutoff">true</bool>
 
+    <!-- Fingerprint sensor -->
+    <dimen name="fingerprint_dot_radius">0dp</dimen>
+    <dimen name="fingerprint_pulse_radius">0dp</dimen>
+
 </resources>
