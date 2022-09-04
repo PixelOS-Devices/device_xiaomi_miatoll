@@ -163,6 +163,9 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=512
 drm.service.enabled=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.media.recorder-max-base-layer-fps=60
+vendor.mm.enable.qcom_parser=16777215
+vendor.video.disable.ubwc=1
 
 # PASR
 vendor.power.pasr.enabled=true
