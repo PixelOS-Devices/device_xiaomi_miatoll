@@ -3,6 +3,7 @@ ro.charger.enable_suspend=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
+bluetooth.hardware.power.operating_voltage_mv=3700
 
 # Bluetooth profiles
 bluetooth.profile.asha.central.enabled?=true
