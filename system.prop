@@ -106,6 +106,10 @@ ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
+# Radio Video Calling
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 

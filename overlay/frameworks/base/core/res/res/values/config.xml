@@ -720,4 +720,7 @@
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
 
+    <!-- Enable video pause workaround when enabling/disabling the camera. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
+
 </resources>
