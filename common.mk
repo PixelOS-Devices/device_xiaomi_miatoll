@@ -39,7 +39,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default \
-    libaudio-resampler
+    libaudio-resampler \
+    libtinycompress \
+    sound_trigger.primary.atoll
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
