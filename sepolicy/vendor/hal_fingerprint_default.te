@@ -1,12 +1,23 @@
-allow hal_fingerprint_default fingerprint_data_file:dir rw_dir_perms;
-allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+# Allow access to the HALs
+hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
+hal_client_domain(hal_fingerprint_default, hal_power)
+
+# Allow binder communication with hal_power_default
+binder_call(hal_fingerprint_default, hal_power_default)
+
+# Allow binder communication with vendor_hal_perf_default
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
+
+allow hal_fingerprint_default fingerprint_data_file:dir create_dir_perms;
+allow hal_fingerprint_default fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 allow hal_fingerprint_default {
   fingerprint_device
   input_device
   tee_device
   uhid_device
+  ion_device
 }: chr_file rw_file_perms;
 
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
@@ -19,8 +30,8 @@ allow hal_fingerprint_default {
 
 allow hal_fingerprint_default {
   vendor_sysfs_fingerprint
-  vendor_sysfs_fps_attr
   vendor_sysfs_graphics
+  vendor_sysfs_fps_attr
   sysfs_msm_subsys
 }: file rw_file_perms;
 
@@ -32,7 +43,3 @@ set_prop(hal_fingerprint_default, vendor_fp_prop)
 
 allow hal_fingerprint_default vendor_sysfs_spss:dir { search };
 allow hal_fingerprint_default vendor_sysfs_spss:file { open read };
-
-allow hal_fingerprint_default default_prop:file { getattr  map  open  read };
-allow hal_fingerprint_default vendor_hal_perf_hwservice:hwservice_manager find;
-

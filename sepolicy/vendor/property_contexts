@@ -1,30 +1,41 @@
 # Camera
-persist.vendor.camera.mi.module.	u:object_r:vendor_camera_prop:s0
-vendor.camera.				u:object_r:vendor_camera_prop:s0
-persist.camera.				u:object_r:vendor_camera_prop:s0
-
-# Dirac
-persist.audio.dirac                     u:object_r:vendor_dirac_prop:s0
+persist.camera.                                 u:object_r:vendor_camera_prop:s0
+persist.vendor.camera                           u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete                     u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.                           u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
+vendor.camera.watermark.en                      u:object_r:vendor_camera_prop:s0
+vendor.camera.boost.en                          u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-persist.vendor.sys.fp.                  u:object_r:vendor_fp_prop:s0
-ro.hardware.fp                          u:object_r:vendor_fp_prop:s0
-vendor.fps_hal.                         u:object_r:vendor_fp_prop:s0
-vendor.sys.fp                           u:object_r:vendor_fp_prop:s0
+persist.vendor.fpc.        u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
+ro.hardware.fp             u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
+ro.boot.fpsensor	   u:object_r:vendor_fp_prop:s0
+vendor.sys.fp              u:object_r:vendor_fp_prop:s0
 
-# Mlipay
-persist.sys.ifaa                        u:object_r:vendor_ifaa_prop:s0
-persist.vendor.sys.pay.		        u:object_r:vendor_ifaa_prop:s0
+# Global
+ro.boot.factorybuild                u:object_r:vendor_public_vendor_default_prop:s0
+ro.boot.hwversion                   u:object_r:vendor_public_vendor_default_prop:s0
 
 # Power
-vendor.powerhal.state                   u:object_r:vendor_power_prop:s0
-vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
-vendor.powerhal.lpm                     u:object_r:vendor_power_prop:s0
-vendor.powerhal.init                    u:object_r:vendor_power_prop:s0
-vendor.powerhal.rendering               u:object_r:vendor_power_prop:s0
+vendor.powerhal.state      u:object_r:power_prop:s0
+vendor.powerhal.audio      u:object_r:power_prop:s0
+vendor.powerhal.lpm        u:object_r:power_prop:s0
+vendor.powerhal.init       u:object_r:power_prop:s0
+vendor.powerhal.rendering  u:object_r:power_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay     u:object_r:vendor_tee_listener_prop:s0
+
+# RIL
+ro.vendor.ril              u:object_r:vendor_public_vendor_default_prop:s0
 
 # Thermal
-vendor.sys.thermal.                     u:object_r:vendor_thermal_normal_prop:s0
+vendor.sys.thermal.		u:object_r:vendor_thermal_engine_prop:s0
 
-#IR
-ro.lirc.dev				u:object_r:lirc_prop:s0
+# WiFi Display
+persist.vendor.setWFDInfo.                                      u:object_r:vendor_wfd_sys_debug_prop:s0

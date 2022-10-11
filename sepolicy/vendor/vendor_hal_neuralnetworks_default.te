@@ -1,2 +1,0 @@
-allow vendor_hal_neuralnetworks_default vendor_default_prop:file { read };
-
