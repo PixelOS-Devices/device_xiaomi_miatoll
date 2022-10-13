@@ -35,7 +35,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Log.d(TAG, "Received boot completed intent");
 
         // Dirac
-        DiracUtils.initialize(context);
+        DiracUtils.onBootCompleted(context);
         
         // Thermal Profiles
         ThermalUtils.startService(context);
