@@ -2,16 +2,9 @@
 ro.apex.updatable=true
 
 # Audio
-audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
-audio.offload.video=true
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-ro.af.client_heap_size_kbyte=7168
-ro.qc.sdk.audio.fluencetype=none
-vendor.mm.enable.qcom_parser=16777215
+audio.offload.min.duration.secs=30
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
 
 # Bluetooth
 ro.bluetooth.emb_wp_mode=false
