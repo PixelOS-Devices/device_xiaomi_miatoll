@@ -5,6 +5,7 @@ ro.apex.updatable=false
 audio.offload.min.duration.secs=30
 
 # Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 persist.vendor.btstack.aac_frm_ctl.enabled=true
