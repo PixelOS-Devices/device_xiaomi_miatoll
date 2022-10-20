@@ -2,3 +2,8 @@
 allow platform_app cgroup:file r_file_perms;
 
 get_prop(platform_app, audio_config_prop)
+
+# FPS
+allow platform_app sysfs_graphics:file r_file_perms;
+allow platform_app sysfs_fps:file { getattr open read };
+allow platform_app sysfs_graphics:dir search;

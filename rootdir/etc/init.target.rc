@@ -219,6 +219,9 @@ on charger
     start charge_logger
     start vendor.power_off_alarm
 
+# Battery smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
