@@ -292,6 +292,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+   ApertureOverlay \
+   ApertureDevOverlay \
    CarrierConfigOverlay \
    DialerOverlay \
    MiatollFrameworks \
