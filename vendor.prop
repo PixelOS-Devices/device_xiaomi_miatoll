@@ -118,7 +118,6 @@ dalvik.vm.dex2oat64.enabled=true
 debug.sdm.support_writeback=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
-debug.sf.enable_gl_backpressure=1
 debug.egl.hw=0
 persist.sys.sf.color_saturation=1.0
 debug.sf.use_phase_offsets_as_durations=1
