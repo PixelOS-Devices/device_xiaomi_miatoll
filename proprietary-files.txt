@@ -343,10 +343,10 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 
-# Camera (Megvii)
-vendor/etc/camera/megviifacepp_0_5_2_model
-vendor/lib64/libMegviiFacepp-0.5.2.so
-vendor/lib64/libmegface.so
+# Camera (Face Detection)
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
 
 # Camera (Provider) - from V12.5.6.0.RJWMIXM
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so|3fdb131775f3daeb72df27e4f327227f33e10c68
