@@ -116,6 +116,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
+debug.sdm.support_writeback=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
