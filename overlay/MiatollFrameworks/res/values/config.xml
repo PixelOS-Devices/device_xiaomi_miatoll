@@ -780,4 +780,7 @@
         <item>org.pixelexperience.faceunlock</item>
     </string-array>
 
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
+
 </resources>
