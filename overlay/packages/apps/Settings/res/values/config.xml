@@ -35,7 +35,7 @@
   <bool name="config_supportsCamToggle">true</bool>
 
   <!-- Smart Charging -->
-  <bool name="config_supportSmartCharging">true</bool>
+  <bool name="config_supportSmartCharging">false</bool>
 
   <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
