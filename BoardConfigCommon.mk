@@ -80,6 +80,10 @@ BOARD_HAVE_QCOM_FM := true
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
+# Jemalloc
+MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
