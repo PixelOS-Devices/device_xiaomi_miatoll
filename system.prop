@@ -127,6 +127,7 @@ persist.data.df.ul_mode=5
 persist.data.wda.enable=true
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
+persist.sys.radio.force_lte_ca=true
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.redir_party_num=1
