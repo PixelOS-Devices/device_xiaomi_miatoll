@@ -112,27 +112,28 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 persist.sys.radio.force_lte_ca=true
 persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,22
-ro.vendor.use_data_netmgrd=true
+ro.telephony.default_network=33,33
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
-# Ram Management
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=64
-ro.config.sdha_apps_bg_min=8
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
 
 # Radio Video Calling
 persist.vendor.radio.vdp_on_ims_cap=1
