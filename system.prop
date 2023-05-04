@@ -25,7 +25,7 @@ ro.sf.blurs_are_expensive=1
 ro.launcher.blur.appLaunch=0
 
 # Brightness Curve
-persist.sys.brightness.low.gamma=true
+persist.sys.brightness.low.gamma=false
 
 # Camera
 ro.miui.notch=1
