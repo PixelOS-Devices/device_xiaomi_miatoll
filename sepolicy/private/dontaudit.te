@@ -1,5 +1,7 @@
-# please don't kill yourself unless it's allowed
-dontaudit linkerconfig self:capability kill;
-
-# b/152468658
 dontaudit vdc self:capability kill;
+dontaudit fsck self:capability kill;
+dontaudit odrefresh self:capability kill;
+dontaudit linkerconfig self:capability kill;
+dontaudit zygote self:capability kill;
+dontaudit kernel self:capability { dac_read_search sys_admin };
+dontaudit isolated_app content_capture_service:service_manager find;
