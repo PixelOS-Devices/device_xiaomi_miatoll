@@ -2,6 +2,3 @@ hal_client_domain(system_app, hal_mlipay)
 
 #Thermals stuff
 allow system_app sysfs_thermal:file write;
-
-# XiaomiParts
-set_prop(system_app, persist_lcd_prop)

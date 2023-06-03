@@ -63,7 +63,7 @@
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
 
 # FPS Info
-/sys/devices/virtual/graphics/fb0/measured_fps u:object_r:sysfs_graphics:s0
+/sys/class/drm/sde-crtc-0/measured_fps                                  u:object_r:sysfs_fps:s0
 
 # Fingerprint - data
 /data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_data_file:s0
@@ -74,6 +74,10 @@
 /dev/ir_spi                                                             u:object_r:lirc_device:s0
 /dev/lirc[0-9]                                                          u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1                                                     u:object_r:lirc_device:s0
+
+# KCAL
+/sys/devices/platform/kcal_ctrl.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
 
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
