@@ -154,6 +154,9 @@ ro.surface_flinger.set_touch_timer_ms=200
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
+# DRM
+drm.service.enabled=true
+
 # FM
 vendor.hw.fm.init=0
 
@@ -170,13 +173,8 @@ ro.apk_verity.mode=2
 ro.hardware.keystore_desede=true
 
 # Media
-debug.media.codec2=2
-debug.stagefright.ccodec=4
-debug.stagefright.omx_default_rank=512
-drm.service.enabled=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=16777215
+debug.stagefright.ccodec=1
+debug.stagefright.omx_default_rank=0
 vendor.video.disable.ubwc=1
 
 # PASR
