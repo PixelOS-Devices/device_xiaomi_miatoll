@@ -49,7 +49,7 @@ ro.opengles.version=196610
 ro.vendor.display.cabl=0
 
 # DPM
-persist.dpm.feature=1
+persist.vendor.dpm.feature=11
 
 # FUSE
 persist.sys.fuse.passthrough.enable=true
