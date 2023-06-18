@@ -27,8 +27,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Audio
 PRODUCT_PACKAGES += \
-    libvolumelistener \
-    sound_trigger.primary.atoll:32
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     audio.usb.default \
