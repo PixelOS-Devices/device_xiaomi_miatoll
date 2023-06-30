@@ -2,9 +2,6 @@
 ro.hardware.camera=xiaomi
 ro.com.google.lens.oem_camera_package=com.android.camera
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Google Photos
 debug.photos.eraser_camo=1
 debug.photos.eraser_suggestion=1
