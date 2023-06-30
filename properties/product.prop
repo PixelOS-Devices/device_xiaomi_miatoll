@@ -11,10 +11,6 @@ debug.photos.eraser_suggestion=1
 debug.photos.force_pixel_eol=1
 debug.photos.p_editr.eraser=1
 
-# LMKD
-ro.config.low_ram=false
-ro.lmk.log_stats=true
-
 # Incremental FS
 ro.incremental.enable=1
 
