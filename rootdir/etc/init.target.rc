@@ -129,14 +129,6 @@ on boot
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
     write /dev/stune/camera-daemon/schedtune.boost 0
 
-#add runin factory charging test
-    chmod 0777 /sys/class/power_supply/battery/input_suspend
-    chmod 0777 /sys/class/power_supply/battery/charging_enabled
-    chmod 0777 /sys/class/power_supply/usb/typec_cc_orientation
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chown system system /sys/class/power_supply/usb/typec_cc_orientation
-
     chmod 0666 sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/cali
     chmod 0666 sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/cali_save
     chmod 0666 sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/f0_save
@@ -221,10 +213,6 @@ on charger
     start charge_logger
     start vendor.power_off_alarm
 
-# Smart Charging
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chmod 0666 /sys/class/power_supply/battery/charging_enabled
-
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
@@ -243,13 +231,6 @@ on property:vendor.display.lcd_density=160
 ## import cne init file
 #on post-fs
 #    export LD_PRELOAD /vendor/lib/libNimsWrap.so
-#
-## Allow usb charging to be disabled peristently
-#on property:persist.usb.chgdisabled=1
-#    write /sys/class/power_supply/battery/charging_enabled 0
-#
-#on property:persist.usb.chgdisabled=0
-#    write /sys/class/power_supply/battery/charging_enabled 1
 
 # QR_code feature
 service nv_mac /vendor/bin/nv_mac
