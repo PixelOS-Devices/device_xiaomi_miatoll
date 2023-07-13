@@ -1,4 +1,4 @@
-# Unpinned blobs from V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
+# Unpinned blobs from V14.0.4.0.SJWMIXM (CURTANAGlobal)
 
 # ACDB
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -342,7 +342,7 @@ vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libmegface.so
 
-# Camera (Provider) - from V12.5.7.0.RJZEUXM
+# Camera (Provider) - from V12.5.6.0.RJWMIXM
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so|3fdb131775f3daeb72df27e4f327227f33e10c68
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|e90855d38e25b174be097fc25d614ca767ab2c06
 
@@ -1104,6 +1104,7 @@ vendor/radio/qcril_database/upgrade/69_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/70_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/71_version_update_ecc_table.sql
+vendor/radio/qcril_database/upgrade/72_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
