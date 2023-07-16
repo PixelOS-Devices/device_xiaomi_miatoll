@@ -23,7 +23,6 @@ import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 import android.util.Log;
 
-import com.xiaomi.parts.dirac.DiracUtils;
 import com.xiaomi.parts.kcal.Utils;
 import com.xiaomi.parts.ambient.SensorsDozeService;
 import com.xiaomi.parts.thermal.ThermalUtils;
@@ -42,9 +41,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
 
        // Ambient
         context.startService(new Intent(context, SensorsDozeService.class));
-
-       // Dirac
-        DiracUtils.onBootCompleted(context);
 
        // Thermal
         ThermalUtils.initialize(context);
