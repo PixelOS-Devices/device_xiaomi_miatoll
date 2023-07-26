@@ -123,8 +123,6 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sdm.support_writeback=0
-debug.sf.enable_transaction_tracing=false
-debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
@@ -147,19 +145,13 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.sensortype=2
 ro.vendor.display.svi=1
-vendor.display.comp_mask=0
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery=1
 vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_inline_rotator=1
-vendor.display.disable_layer_stitch=0
-vendor.display.disable_rotator_downscale=1
-vendor.display.disable_rotator_ubwc=1
-vendor.display.disable_scaler=0
 vendor.display.disable_ui_3d_tonemap=1
 vendor.display.enable_default_color_mode=0
 vendor.display.enable_null_display=0
@@ -168,7 +160,6 @@ vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
-vendor.gralloc.disable_ubwc=0
 
 # DRM
 drm.service.enabled=true
