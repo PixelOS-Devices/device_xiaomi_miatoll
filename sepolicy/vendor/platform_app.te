@@ -4,9 +4,9 @@ allow platform_app cgroup:file r_file_perms;
 get_prop(platform_app, audio_config_prop)
 
 # FPS
-allow platform_app sysfs_graphics:file r_file_perms;
 allow platform_app sysfs_fps:file { getattr open read };
-allow platform_app sysfs_graphics:dir search;
+allow platform_app vendor_sysfs_graphics:dir search;
+allow platform_app vendor_sysfs_graphics:file r_file_perms;
 
 allow platform_app {
     DisplayFeatureControl
@@ -28,10 +28,6 @@ allow platform_app vendor_sysfs_battery_supply:file { getattr open read };
 allow platform_app vendor_sysfs_kgsl:dir search;
 allow platform_app vendor_sysfs_kgsl:file { getattr open read };
 
-get_prop(platform_app, vendor_audio_prop);
+get_prop(platform_app, vendor_audio_prop)
 
 allow platform_app sysfs_msm_subsys:dir { search };
-
-# Allow systemui to read vendor_sysfs_graphics
-allow platform_app vendor_sysfs_graphics:dir search;
-allow platform_app vendor_sysfs_graphics:file r_file_perms;

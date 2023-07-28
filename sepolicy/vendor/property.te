@@ -1,5 +1,5 @@
 # Aware
-vendor_restricted_prop(vendor_aware_available_prop);
+vendor_restricted_prop(vendor_aware_available_prop)
 
 # Fingerprint
 type vendor_fp_prop, property_type;

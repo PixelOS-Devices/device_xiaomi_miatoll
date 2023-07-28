@@ -1,4 +1,1 @@
 hal_client_domain(system_app, hal_mlipay)
-
-#Thermals stuff
-allow system_app sysfs_thermal:file write;
