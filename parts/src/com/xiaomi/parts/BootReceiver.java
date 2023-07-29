@@ -24,7 +24,6 @@ import androidx.preference.PreferenceManager;
 import android.util.Log;
 
 import com.xiaomi.parts.kcal.Utils;
-import com.xiaomi.parts.ambient.SensorsDozeService;
 import com.xiaomi.parts.thermal.ThermalUtils;
 
 public class BootReceiver extends BroadcastReceiver implements Utils {
@@ -38,9 +37,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         Log.v("XiaomiParts: BootReceiver", "Called");
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-
-       // Ambient
-        context.startService(new Intent(context, SensorsDozeService.class));
 
        // Thermal
         ThermalUtils.initialize(context);
