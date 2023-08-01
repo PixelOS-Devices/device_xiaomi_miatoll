@@ -353,7 +353,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power@1.3-service.xiaomi_sm6250
 
 # RCS
 PRODUCT_PACKAGES += \
