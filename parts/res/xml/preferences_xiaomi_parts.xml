@@ -60,18 +60,4 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-
-        android:key="usb_fastcharge"
-        android:title="@string/usb_fastcharge_category" >
-
-        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="fastcharge"
-            android:defaultValue="true"
-            android:title="@string/usb_fastcharge_title"
-            android:icon="@drawable/ic_usb_fastcharge"
-            android:summary="@string/usb_fastcharge_summary" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>

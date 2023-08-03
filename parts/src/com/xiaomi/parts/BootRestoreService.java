@@ -70,10 +70,6 @@ public class BootRestoreService extends Service implements Utils {
 
         // Restore preferences
 
-        // USB Fastcharge
-        FileUtils.setValue(DeviceSettings.USB_FASTCHARGE_PATH, Settings.Secure.getInt(getContentResolver(),
-                DeviceSettings.PREF_USB_FASTCHARGE, 0));
-
         // FPS Info
         boolean enabled = sharedPrefs.getBoolean(DeviceSettings.PREF_KEY_FPS_INFO, false);
         if (enabled)
