@@ -348,9 +348,9 @@ vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_
 vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
 vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
 
-# Camera (Provider) - from V12.5.6.0.RJWMIXM
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so|3fdb131775f3daeb72df27e4f327227f33e10c68
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|e90855d38e25b174be097fc25d614ca767ab2c06
+# Camera provider
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 # CDSP
 vendor/bin/cdsprpcd
