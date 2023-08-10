@@ -33,7 +33,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_INCLUDE_OEM_CAMERA := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_SUPPORTS_CALL_RECORDING := true
