@@ -65,6 +65,8 @@ on fs
     chown system system /sys/class/thermal/thermal_message/sconfig
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown system system /sys/class/thermal/thermal_message/temp_state
+    # Clean out sensor_temperature from the sensor list
+    start vendor.sensors_fixup
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
@@ -190,6 +192,12 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
+
+service vendor.sensors_fixup /vendor/bin/init.sensors_fixup.sh
+    class main
+    user system
+    group system
+    oneshot
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
