@@ -166,7 +166,6 @@ BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := atoll
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
