@@ -13,6 +13,7 @@
 # limitations under the License.
 
 DEVICE_PATH := device/xiaomi/miatoll
+KERNEL_PATH := $(DEVICE_PATH)-kernel
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -102,24 +103,24 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_miatoll
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
+# Workaround to make lineage's soong generator work
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
+# Kill lineage kernel build task while preserving kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/miatoll-kernel/dtbo.img
 
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/miatoll-kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
-
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := cust_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/miatoll
-
-KERNEL_LD := LD=ld.lld
-KERNEL_CLANG_TRIPLE := CLANG_TRIPLE=aarch64-linux-gnu-
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -193,7 +194,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
