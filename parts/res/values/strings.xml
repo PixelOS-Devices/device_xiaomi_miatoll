@@ -15,6 +15,9 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Xiaomi Parts -->
+    <string name="app_name">Xiaomi Parts</string>
+    
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Clear speaker</string>
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
