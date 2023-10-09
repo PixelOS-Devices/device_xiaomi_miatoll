@@ -452,7 +452,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libwatermark_shim
+    libpiex_shim
 
 # Telephony
 PRODUCT_PACKAGES += \
