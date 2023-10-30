@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "SettingsOverlay",
+    name: "MiatollCarrierConfigOverlay",
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true,

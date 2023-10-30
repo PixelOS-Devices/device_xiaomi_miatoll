@@ -326,17 +326,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    ApertureOverlay \
-    ApertureDevOverlay \
-    CarrierConfigOverlay \
-    DialerOverlay \
+    MiatollCarrierConfigOverlay \
+    MiatollDialerOverlay \
     MiatollFrameworks \
+    MiatollSettingsLibOverlay \
+    MiatollSettingsOverlay \
     MiatollSystemUI \
-    SettingsLibOverlay \
-    SettingsOverlay \
-    TelephonyOverlay \
-    TetheringConfigOverlay \
-    WifiOverlay
+    MiatollTelephonyOverlay \
+    MiatollWifiOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
