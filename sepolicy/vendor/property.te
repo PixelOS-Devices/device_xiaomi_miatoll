@@ -1,0 +1,14 @@
+# Aware
+vendor_restricted_prop(vendor_aware_available_prop)
+
+# Fingerprint
+type vendor_fp_prop, property_type;
+
+# Init
+type vendor_device_prop, property_type;
+
+# Power
+type power_prop, property_type;
+
+# Thermal
+type vendor_thermal_engine_prop, property_type;

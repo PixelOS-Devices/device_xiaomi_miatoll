@@ -1,0 +1,15 @@
+# Camera
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
+
+# Google Photos
+debug.photos.eraser_camo=1
+debug.photos.eraser_suggestion=1
+debug.photos.force_pixel_eol=1
+debug.photos.p_editr.eraser=1
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Shutdown
+ro.build.shutdown_timeout=2

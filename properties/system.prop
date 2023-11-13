@@ -1,0 +1,144 @@
+# Apex
+ro.apex.updatable=true
+
+# Audio
+audio.offload.min.duration.secs=30
+
+# Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
+
+# Brightness Curve
+persist.sys.brightness.low.gamma=false
+
+# Camera
+ro.miui.notch=1
+persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.aperture
+
+# Charger
+ro.charger.enable_suspend=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Dalvik
+dalvik.vm.dexopt.secondary=true
+
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
+
+# Display
+debug.sf.enable_hwc_vds=1
+
+# DPM
+persist.vendor.dpm.feature=11
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
+#GBoard
+ro.com.google.ime.kb_pad_port_b=1
+
+# HVDCP
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.cp.fcc_main_ua=400000
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Logs
+persist.log.tag.AnalyticsService=S
+persist.log.tag.KernelCpuUidActiveTimeReader=S
+persist.log.tag.Tracer=S
+persist.log.tag.NearbySharing=S
+persist.log.tag.IntervalStats=S
+persist.log.tag.CompatibilityChangeReporter=S
+persist.log.tag.SQLiteLog=S
+persist.log.tag.wificond=S
+persist.log.tag.b/223498680=S
+persist.log.tag.TrafficStats=S
+persist.log.tag.ContrastColorUtil=S
+persist.log.tag.RefreshRateConfigs=S
+persist.log.tag.CHIUSECASE=S
+
+# Media
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+persist.mm.enable.prefetch=true
+ro.media.recorder-max-base-layer-fps=60
+vendor.mm.enable.qcom_parser=16777215
+
+# Perf
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
+# Qcom
+ro.vendor.qti.va_aosp.support=1
+
+# Radio
+DEVICE_PROVISIONED=1
+keyguard.no_require_sim=true
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.radio.atfwd.start=false
+persist.data.df.dev_name=rmnet_usb0
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.wda.enable=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+persist.sys.radio.force_lte_ca=true
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.redir_party_num=1
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.snapshot_enabled=1
+persist.vendor.radio.snapshot_timer=5
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=33,33
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+telephony.lteOnCdmaDevice=1
+persist.sys.fflag.override.settings_provider_model=false
+
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+
+# Radio Video Calling
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+#thermal configs path
+sys.thermal.data.path=/data/vendor/thermal/
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# Storage.xml moment
+persist.sys.binary_xml=false
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+vendor.sys.video.disable.ubwc=1
