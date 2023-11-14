@@ -236,6 +236,11 @@ persist.vendor.sensors.enable.mag_filter=true
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7125
 
+# Suspend Properties
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
 # Spatial Audio
 ro.audio.spatializer_enabled=true
 ro.audio.spatializer_transaural_enabled_default=false
